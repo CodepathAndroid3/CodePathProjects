@@ -18,15 +18,16 @@ An app that allows users to look at the most popular tv shows at the moment and 
 - **Category:**
     Entertainment
 - **Mobile:**
-    
+    Taking picture for the user profile picture
 - **Story:**
-    
+    Did you ever get tired of having to keep track of the episodes and tv    shows     you've watched on a text document or mentally keep track? This app is design to resolve those issues! 
 
 - **Market:**
     Anyone who watches TV shows and wants to be up to date.
 - **Habit:**
     Users will often sometimes to check up on their favorite TV shows
 - **Scope:**
+    
     
 ## Product Spec
 
@@ -35,11 +36,15 @@ An app that allows users to look at the most popular tv shows at the moment and 
 **Required Must-have Stories**
 
 * [] The app needs to retrieves TV show data from the network and present this data within the app
-* [] A view 
+* [] Detail page will contain TV show description, and trailer, with favorite button.
+* [] Profile page that access camera to have a profile picture, signout button.
+* [] Login page that allows users to log in or sign up
 
 **Optional Nice-to-have Stories**
 
-* [] 
+* [] Episode watch count on both list and detail page.
+* [] Detail page containing list of episodes
+* [] Notification of new episode.
 * ...
 
 ### 2. Screen Archetypes
