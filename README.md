@@ -26,7 +26,8 @@ An app that allows users to look at the most popular tv shows at the moment and 
     Anyone who watches TV shows and wants to be up to date.
 - **Habit:**
     Users will often sometimes to check up on their favorite TV shows
-- **Scope:**
+- **Scope:** 
+    A few weeks to flesh out the basics and establish a foundation.
     
     
 ## Product Spec
@@ -60,22 +61,23 @@ An app that allows users to look at the most popular tv shows at the moment and 
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* [Home (List of TV shows]
+* [Favorite Tab (Shows your favorite shows, or those you mark to keep track of)]
+* [Profile]
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
+* [Home (List of TV shows)]
+   * []Favorite Window
+   * []Profile Window
+   * Shows Details
+* [] Favorite Window
+   * [] Shows
    * ...
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="wireframe.unit8.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
