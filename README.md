@@ -50,12 +50,22 @@ An app that allows users to look at the most popular tv shows at the moment and 
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * List of episodes on a  main page.
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login 
+* Register - User signs up or logs into their account
+   * Upon Download/Reopening of the application, the user is prompted to log in to gain access to their profile information to be properly matched with another            person. 
+* Home Screen
+   * List of TV shows on a  main page.
+   * Has a bottom bar connecting to profile, home and favorites page
+* Profile Screen 
+   * Allows user to upload a photo and fill in information that is interesting to them and others
+   * ....
+* Detail view
+   * When a TV show is clicked on the main page, navigates to here
+   * Shows a trailer of the TV show and list of episodes
+   * ....
+* Favorites List
+   * Shows a list of TV shows that the user wants to keep track of
+   * ....
 
 ### 3. Navigation
 
