@@ -181,9 +181,9 @@ Base URL - https://api.themoviedb.org/3
 **Milestone 1** | Unit 10: Deadline April 22nd:
 
 Required:
--Getting the popular shows and putting it into a recyler view
--Making details page for each show.
--Detail page should have TV picture,overview, # of seasons and episodes.
+- Getting the popular shows and putting it into a recyler view
+- Making details page for each show.
+- Detail page should have TV picture,overview, # of seasons and episodes.
 
 Optional:
 -App Logo
@@ -195,25 +195,25 @@ Adding a trailer
 **Milestone 2** | Unit 11: Deadline April 29th:
 
 Required:
--Make login screen.
--Set up back4 (User data)
--Establish structure for user accounts.
--Set up camera for profile picture.
+- Make login screen.
+- Set up back4 (User data)
+- Establish structure for user accounts.
+- Set up camera for profile picture.
 
 
 **Milestone 3** | Unit 12: Deadline May 6th:
 
 Required:
--Favorite tab
--Incoporating favoriting, having the data saved for the account
--Unfavoriting.
--Favorite tab, when clicking on episode, you go to the tv show detail.
+- Favorite tab
+- Incoporating favoriting, having the data saved for the account
+- Unfavoriting.
+- Favorite tab, when clicking on episode, you go to the tv show detail.
 
 
 **Milestone 4** | Unit 13: Deadline May 13th:
 
 Required:
-Note feature for TV shows in favorite. (Basically any notes the user want to make note of for that show)
+- Note feature for TV shows in favorite. (Basically any notes the user want to make note of for that show)
 
 Optional:
 
