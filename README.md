@@ -45,6 +45,7 @@ An app that allows users to look at the most popular TV shows at the moment and 
 * [] Profile Page
     * []Camera for profile picture.
     * []Any personal user note.
+    * []Sign-Out Button.
 * [] Login page that allows users to log in or sign up
 
 **Optional Nice-to-have Stories**
