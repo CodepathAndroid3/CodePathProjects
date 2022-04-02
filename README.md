@@ -102,7 +102,6 @@ An app that allows users to look at the most popular TV shows at the moment and 
 
 ### [BONUS] Interactive Prototype
 
-## Unit 9
 ## Schema 
 
 ### Models
@@ -178,8 +177,9 @@ Base URL - https://api.themoviedb.org/3
 |GET|/tv/{tv_id}/videos|Videos for TV Show|
 | | |
 
-
+---------------------------
 **Milestone 1** | Unit 10: Deadline April 22nd:
+
 Required:
 -Getting the popular shows and putting it into a recyler view
 -Making details page for each show.
@@ -193,6 +193,7 @@ Adding a trailer
 
 
 **Milestone 2** | Unit 11: Deadline April 29th:
+
 Required:
 -Make login screen.
 -Set up back4 (User data)
@@ -201,6 +202,7 @@ Required:
 
 
 **Milestone 3** | Unit 12: Deadline May 6th:
+
 Required:
 -Favorite tab
 -Incoporating favoriting, having the data saved for the account
@@ -209,6 +211,7 @@ Required:
 
 
 **Milestone 4** | Unit 13: Deadline May 13th:
+
 Required:
 Note feature for TV shows in favorite. (Basically any notes the user want to make note of for that show)
 
