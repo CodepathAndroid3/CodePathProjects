@@ -93,11 +93,143 @@ An app that allows users to look at the most popular TV shows at the moment and 
 
 ### [BONUS] Interactive Prototype
 
+## Unit 9
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+#### TV Popular
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | poster_path   | String or null   | link to a picture or poster of this TV show |
+   | popularity        | number | stars, says rating  |
+   | original_name       | String     | name of TV show |
+   | overview       | String   | Description of TV show |
+   | id        | String | ID number of this TV show |
+   
+#### TV Videos
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | key  | String    | key to youtube link of trailer |
+   | id        | String | id number of this video  |
+   | name      | String     | name of TV show trailer |
+   | overview       | String   | Description of TV show |
+   
+#### TV Seasons
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | season_number  | integer    | season number of TV show |
+   | tv_id      | integer | id number of the TV show  |
+   | episodes    | array[object] | List of TV episodes for the season |
+   | name      | String     | name of this episode |
+  
+#### Favorite TV Shows
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | poster_path   | String or null   | link to a picture or poster of this TV show |
+   | popularity        | number | stars, says rating  |
+   | original_name       | String     | name of TV show |
+   | overview       | String   | Description of TV show |
+   | id        | String | ID number of this TV show |
+   
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+#### List of network requests by screen
+   - Home Feed Screen
+      - (GET) get a list of TV shows
+         ```swift
+         client.get(https://api.themoviedb.org/3/tv/popular?api_key={api_key}), new JsonHttpResponseHandler() {
+            @SuppressLint("NotifyDataSetChanged")
+            @Override
+            public void onSuccess(int statusCode, Headers headers, JSON json) {
+                Log.d(TAG, "OnSuccess" + json);
+                JSONObject jsonObject = json.jsonObject;
+                try {
+                    JSONArray results = jsonObject.getJSONArray("results");
+
+                } catch (JSONException e) {
+                    Log.e(TAG, "Hit json exception", e);
+                }
+            }
+
+            @Override
+            public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
+                Log.d(TAG, "OnFailure");
+            }
+        });
+         ``` List endpoints if using existing API such as Yelp]
+- 
+### Movie Database API
+Base URL - https://api.themoviedb.org/3
+
+
+| HTTP Verb | Endpoint | Description |
+|------------- | -------- | ------------|
+|GET|/tv/popular|List of Popular TV Shows|
+|GET|/tv/{tv_id}/season/{season_number}|Details for Season|
+|GET|/tv/{tv_id}/videos|Videos for TV Show|
+| | |
+
+
+**Milestone 1** | Unit 10: Deadline April 22nd:
+Required:
+-Getting the popular shows and putting it into a recyler view
+-Making details page for each show.
+-Detail page should have TV picture,overview, # of seasons and episodes.
+
+Optional:
+-App Logo
+
+-TV Detail Page
+Adding a trailer
+
+
+**Milestone 2** | Unit 11: Deadline April 29th:
+Required:
+-Make login screen.
+-Set up back4 (User data)
+-Establish structure for user accounts.
+-Set up camera for profile picture.
+
+
+**Milestone 3** | Unit 12: Deadline May 6th:
+Required:
+-Favorite tab
+-Incoporating favoriting, having the data saved for the account
+-Unfavoriting.
+-Favorite tab, when clicking on episode, you go to the tv show detail.
+
+
+**Milestone 4** | Unit 13: Deadline May 13th:
+Required:
+Note feature for TV shows in favorite. (Basically any notes the user want to make note of for that show)
+
+Optional:
+
+-----
+Note: 
+For favoriting, onclicklistener for a button on the details.
+
+----
+https://developers.themoviedb.org/3/tv-episodes/get-tv-episode-details
+Notes:
+
+Screens:
+Login Screen - GET,Update/PUT for SignUp
+Home Screen - Read/GET TV Popular Shows,
+Details Screen - Read/Get , Update/PUT
+Profile Screen - Update/PUT
+Favorite Screen - Read/GET User's favorite,
+
+
+Required:
+Getting the list of shows
+Each show having a trailer and description
+Favoriting the shows for user.
+Signing up a user.
+
+
+Options:
+Genre tag for the shows.
+Watch providers for the shows.
+
+App Logo
