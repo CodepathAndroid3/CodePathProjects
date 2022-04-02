@@ -40,19 +40,19 @@ An app that allows users to look at the most popular TV shows at the moment and 
 * [] Home Page
     *[]Contain list of popular TV shows.
 * [] Detail Page
-    *[]Contain TV shows picture,overview.
-    *[]Adding favorite button.
+    * []Contain TV shows picture,overview.
+    * []Adding favorite button.
 * [] Profile Page
-    *[]Camera for profile picture.
-    *[]Any personal user note.
+    * []Camera for profile picture.
+    * []Any personal user note.
 * [] Login page that allows users to log in or sign up
 
 **Optional Nice-to-have Stories**
 
 * [] Detail Page:
-    *[]Contain trailer for the show.
-    *[]Genre tag.
-    *[]Episode watch count(Through user writing a note)
+    * []Contain trailer for the show.
+    * []Genre tag.
+    * []Episode watch count(Through user writing a note)
 * [] Notification of new episode, to shows they favorite.
 * ...
 
