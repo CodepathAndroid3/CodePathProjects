@@ -222,19 +222,14 @@ Note:
 For favoriting, onclicklistener for a button on the details.
 
 ----
-https://developers.themoviedb.org/3/tv-episodes/get-tv-episode-details
+
 Notes:
+https://developers.themoviedb.org/3/tv-episodes/get-tv-episode-details
 
 Screens:
-Login Screen - GET,Update/PUT for SignUp
-Home Screen - Read/GET TV Popular Shows,
-Details Screen - Read/Get , Update/PUT
-Profile Screen - Update/PUT
-Favorite Screen - Read/GET User's favorite,
+- Login Screen - GET,Update/PUT for SignUp
+- Home Screen - Read/GET TV Popular Shows,
+- Details Screen - Read/Get , Update/PUT
+- Profile Screen - Update/PUT
+- Favorite Screen - Read/GET User's favorite,
 
-
-Options:
-Genre tag for the shows.
-Watch providers for the shows.
-
-App Logo
