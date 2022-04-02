@@ -177,12 +177,6 @@ Base URL - https://api.themoviedb.org/3
 |GET|/tv/{tv_id}/videos|Videos for TV Show|
 | | |
 
------
-Note: 
-For favoriting, onclicklistener for a button on the details.
-
-----
-
 Notes:
 https://developers.themoviedb.org/3/tv-episodes/get-tv-episode-details
 
