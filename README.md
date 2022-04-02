@@ -37,15 +37,23 @@ An app that allows users to look at the most popular TV shows at the moment and 
 **Required Must-have Stories**
 
 * [] The app needs to retrieves TV show data from the network and present this data within the app
-* [] Detail page will contain TV show description, and trailer, with favorite button.
-* [] Profile page that access camera to have a profile picture, signout button.
+* [] Home Page
+    *[]Contain list of popular TV shows.
+* [] Detail Page
+    *[]Contain TV shows picture,overview.
+    *[]Adding favorite button.
+* [] Profile Page
+    *[]Camera for profile picture.
+    *[]Any personal user note.
 * [] Login page that allows users to log in or sign up
 
 **Optional Nice-to-have Stories**
 
-* [] Episode watch count on both list and detail page.
-* [] Detail page containing list of episodes
-* [] Notification of new episode.
+* [] Detail Page:
+    *[]Contain trailer for the show.
+    *[]Genre tag.
+    *[]Episode watch count(Through user writing a note)
+* [] Notification of new episode, to shows they favorite.
 * ...
 
 ### 2. Screen Archetypes
@@ -219,13 +227,6 @@ Home Screen - Read/GET TV Popular Shows,
 Details Screen - Read/Get , Update/PUT
 Profile Screen - Update/PUT
 Favorite Screen - Read/GET User's favorite,
-
-
-Required:
-Getting the list of shows
-Each show having a trailer and description
-Favoriting the shows for user.
-Signing up a user.
 
 
 Options:
