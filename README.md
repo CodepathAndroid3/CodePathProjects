@@ -11,16 +11,16 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-An app that allows users to look at the most popular tv shows at the moment and to see some data about those TV shows
+An app that allows users to look at the most popular TV shows at the moment and see some data about those TV shows.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
 - **Category:**
     Entertainment
 - **Mobile:**
-    Taking picture for the user profile picture
+    Taking picture for the user profile picture.
 - **Story:**
-    Did you ever get tired of having to keep track of the episodes and tv    shows     you've watched on a text document or mentally keep track? This app is design to resolve those issues! 
+    Do you ever get tired of having to keep track of the episodes and TV shows you've watched on a text document or mentally keep track? This app is designed to resolve those issues! 
 
 - **Market:**
     Anyone who watches TV shows and wants to be up to date.
