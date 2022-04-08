@@ -11,7 +11,7 @@ CodePath Original App Design Project
 
 ## Overview
 ### Description
-An app that allows users to look at the most popular TV shows at the moment and see some data about those TV shows.
+An app that allows users to look at the current most popular TV shows and see some data about those TV shows.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
@@ -25,45 +25,45 @@ An app that allows users to look at the most popular TV shows at the moment and 
 - **Market:**
     Anyone who watches TV shows and wants to be up to date.
 - **Habit:**
-    Users will often sometimes to check up on their favorite TV shows
+    TV shows are already habit-forming – our app is simply an extension, allowing users to check on their shows as frequently as desired. 
 - **Scope:** 
-    A few weeks to flesh out the basics and establish a foundation.
+    Several weeks to establish a foundation.
     
     
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
 
-**Required Must-have Stories**
+**Required (Must-Have) Stories**
 
-* [] The app needs to retrieves TV show data from the network and present this data within the app
+* [] The app must retrieve TV show data from the network and present this data within the app.
 * [] Home Page
-    *[]Contain list of popular TV shows.
+    *[] Contain list of popular TV shows.
 * [] Detail Page
-    * []Contain TV shows picture,overview.
-    * []Adding favorite button.
+    * [] Contain TV shows, picture, overview.
+    * [] "Add Favorite" button.
 * [] Profile Page
-    * []Camera for profile picture.
-    * []Any personal user note.
-    * []Sign-Out Button.
+    * [] Camera for profile picture.
+    * [] Any personal user note.
+    * [] Sign-Out Button.
 * [] Login page that allows users to log in or sign up
 
 **Optional Nice-to-have Stories**
 
 * [] Detail Page:
-    * []Contain trailer for the show.
-    * []Genre tag.
-    * []Episode watch count(Through user writing a note)
-* [] Notification of new episode, to shows they favorite.
+    * [] Contain trailer for the show.
+    * [] Genre tag.
+    * [] Episode watch count (Through user writing a note)
+* [] Notification of new episode, to show their favorite.
 * ...
 
 ### 2. Screen Archetypes
 
 * Login 
 * Register - User signs up or logs into their account
-   * Upon Download/Reopening of the application, the user is prompted to log in to gain access to their profile information to be properly matched with another            person. 
+   * Upon download/reopening of the application, the user is prompted to log in to gain access to their profile information to be properly matched with another person. 
 * Home Screen
-   * List of TV shows on a  main page.
+   * List of TV shows on a main page.
    * Has a bottom bar connecting to profile, home and favorites page
 * Profile Screen 
    * Allows user to upload a photo and fill in information that is interesting to them and others
