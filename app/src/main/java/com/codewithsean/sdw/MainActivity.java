@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                     shows.addAll(Shows.fromJsonArray(results));
                     //movies = Movie.fromJsonArray(results);
                     showsAdapter.notifyDataSetChanged();
-                    Log.i(TAG, "Movies: " + shows.size());
+                    Log.i(TAG, "Shows: " + shows.size());
 
                 } catch (JSONException e) {
                     Log.e(TAG, "Hit json exception", e);

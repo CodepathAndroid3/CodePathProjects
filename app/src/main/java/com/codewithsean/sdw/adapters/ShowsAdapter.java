@@ -75,7 +75,7 @@ public class ShowsAdapter extends RecyclerView.Adapter<ShowsAdapter.ViewHolder> 
             String imageURL;
             imageURL = shows.getPosterPath();
 
-            Glide.with(context).load(imageURL).placeholder(new ColorDrawable(Color.BLACK)).into(ivPoster);
+            Glide.with(context).load(imageURL).into(ivPoster);
         }
 
 
