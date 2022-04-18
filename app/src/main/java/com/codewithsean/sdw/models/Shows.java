@@ -3,10 +3,11 @@ package com.codewithsean.sdw.models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Parcel
 public class Shows {
 
     String poster_path;
