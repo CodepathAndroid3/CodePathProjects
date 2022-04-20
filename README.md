@@ -39,8 +39,9 @@ An app that allows users to look at the current most popular TV shows and see so
 * [X] The app must retrieve TV show data from the network and present this data within the app.
 * [X] Home Page
     *[X] Contain list of popular TV shows.
-* [] Detail Page
-    * [] Contain TV shows, picture, overview.
+* [X] Detail Page
+    * [X] Contain TV shows, overview.
+    * [] Picture of TV show
     * [] "Add Favorite" button.
 * [] Profile Page
     * [] Camera for profile picture.
