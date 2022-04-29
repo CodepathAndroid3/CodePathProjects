@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--Header-->
+    <TextView
+        android:id="@+id/tvProfHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Profile"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--Profile Picture-->
+    <ImageView
+        android:id="@+id/ivProfpic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        tools:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+    <!--Username-->
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/ivProfpic"
+        android:textSize="24sp"
+        tools:text="Username" />
+
+    <!--Watch Later Button-->
+    <Button
+        android:id="@+id/watchlater"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/ivProfpic"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:text="Watch Later" />
+
+    <!--Camera Button (for profile pic)-->
+    <ImageButton
+        android:id="@+id/camera"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/ivProfpic"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="66dp"
+        android:layout_toEndOf="@+id/watchlater"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <!--Camera Button Description-->
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/camera"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/watchlater"
+        android:gravity="center"
+        android:text="Take Profile Picture" />
+
+    <!--Sign Out Button-->
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/watchlater"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="165dp"
+        android:text="Sign Out" />
+
+    <!--TODO: navigation bar goes at bottom of screen-->
+
+</RelativeLayout>
