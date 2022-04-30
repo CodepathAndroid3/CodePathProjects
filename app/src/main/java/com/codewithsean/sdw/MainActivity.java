@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String GET_TV = "https://api.themoviedb.org/3/tv/popular?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
     public static final String TAG ="MainActivity";
-
+    //cicoc
     List<Shows> shows;
 
     @Override
