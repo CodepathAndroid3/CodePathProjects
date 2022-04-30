@@ -16,15 +16,6 @@
         android:theme="@style/Theme.SDW">
 
         <activity
-            android:name=".DetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

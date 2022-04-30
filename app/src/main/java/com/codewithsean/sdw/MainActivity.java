@@ -11,6 +11,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -39,8 +40,6 @@ public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
     final FragmentManager fragmentManager = getSupportFragmentManager();
 
-
-    List<Shows> shows;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,78 +47,40 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        RecyclerView rvShows = findViewById(R.id.rvShows);
-        shows = new ArrayList<>();
-
-        //create an adapter
-        ShowsAdapter showsAdapter = new ShowsAdapter(this, shows);
-
-        //set the adapter to RV
-        rvShows.setAdapter(showsAdapter);
-
-        //set layout manager to Rv
-        rvShows.setLayoutManager(new LinearLayoutManager(this));
-
-        AsyncHttpClient client = new AsyncHttpClient();
-        client.get(GET_TV, new JsonHttpResponseHandler() {
-            @SuppressLint("NotifyDataSetChanged")
-            @Override
-            public void onSuccess(int statusCode, Headers headers, JSON json) {
-                Log.d(TAG, "OnSuccess" + json);
-                JSONObject jsonObject = json.jsonObject;
-                try {
-                    JSONArray results = jsonObject.getJSONArray("results");
-                    Log.i(TAG,  "Results: " + results);
-                    shows.addAll(Shows.fromJsonArray(results));
-                    //movies = Movie.fromJsonArray(results);
-                    showsAdapter.notifyDataSetChanged();
-                    Log.i(TAG, "Shows: " + shows.size());
-
-                } catch (JSONException e) {
-                    Log.e(TAG, "Hit json exception", e);
-                }
-            }
-
-            @Override
-            public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
-
-            }
-
-        });
-
-
         bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                //Fragment fragment = new HomeFragment();
+                Fragment fragment;
                 switch (item.getItemId()) {
-                    case R.id.action_profile:
-                        goProfileActivity();
-                        //fragment = new ProfileFragment();
-
+                    case R.id.action_profile://goes to profile page
+                        fragment = new ProfileFragment();
                         Toast.makeText(MainActivity.this,"profile", Toast.LENGTH_SHORT).show();
                         break;
-                        //main activity
-                        //fragment = new HomeFragment();
-                        //Toast.makeText(MainActivity.this,"home", Toast.LENGTH_SHORT).show();
-                        //break;
-                    case R.id.action_login:
-                        goLoginActivity();
-                        break;
-                        //  goLoginActivity();
+//                    case R.id.action_login:
+//                        goLoginActivity();
+//                        break;
+//                        //  goLoginActivity();
+                    case R.id.action_home://goes to home
                     default:
-                    case R.id.action_home:
-                        //fragment = new HomeFragment();
                         Toast.makeText(MainActivity.this,"home", Toast.LENGTH_SHORT).show();
+                        fragment = new HomeFragment();
                         break;
                 }
-                //fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit();
                 return true;
             }
         });
+        //default view
         bottomNavigationView.setSelectedItemId(R.id.action_home);
 
 
+    }
+
+    //makes the menu be shown on menu_main
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_bottom_navigation, menu);
+        return true;
     }
 
     private void goLoginActivity() {

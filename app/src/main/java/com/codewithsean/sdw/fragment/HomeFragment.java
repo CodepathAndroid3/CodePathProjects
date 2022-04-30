@@ -29,56 +29,16 @@ import java.util.List;
 
 import okhttp3.Headers;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link HomeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class HomeFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+
     public static final String GET_TV = "https://api.themoviedb.org/3/tv/popular?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
     public static final String TAG ="Home";
-    private static final String ARG_PARAM2 = "param2";
-    private static final String ARG_PARAM1 = "param2";
+    List<Shows> shows;
+    private RecyclerView rvShows;
+    protected ShowsAdapter showsAdapter;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public HomeFragment() {
-        // Required empty public constructor
-    }
-
-
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment HomeFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static HomeFragment newInstance(String param1, String param2) {
-        HomeFragment fragment = new HomeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -87,12 +47,54 @@ public class HomeFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        rvShows = view.findViewById(R.id.rvShows);
 
-        List<Shows> shows;
+        shows = new ArrayList<>();
+        //create an adapter
+        showsAdapter = new ShowsAdapter(getContext(), shows);
 
+
+
+        //set the adapter to RV
+        rvShows.setAdapter(showsAdapter);
+
+        //set layout manager to Rv
+        rvShows.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        ProduceShows();
+
+    }
+
+    public void ProduceShows() {
+        AsyncHttpClient client = new AsyncHttpClient();
+        client.get(GET_TV, new JsonHttpResponseHandler() {
+            @SuppressLint("NotifyDataSetChanged")
+            @Override
+            public void onSuccess(int statusCode, Headers headers, JSON json) {
+                Log.d(TAG, "OnSuccess" + json);
+                JSONObject jsonObject = json.jsonObject;
+                try {
+                    JSONArray results = jsonObject.getJSONArray("results");
+                    Log.i(TAG, "Results: " + results);
+                    shows.addAll(Shows.fromJsonArray(results));
+                    //movies = Movie.fromJsonArray(results);
+                    showsAdapter.notifyDataSetChanged();
+                    Log.i(TAG, "Shows: " + shows.size());
+
+                } catch (JSONException e) {
+                    Log.e(TAG, "Hit json exception", e);
+                }
+            }
+
+            @Override
+            public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
+                Log.d(TAG, "OnJSONFailure" + response);
+            }
+        });
     }
 }
