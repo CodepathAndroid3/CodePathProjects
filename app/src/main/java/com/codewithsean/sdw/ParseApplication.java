@@ -1,6 +1,8 @@
 package com.codewithsean.sdw;
 
 import android.app.Application;
+
+import com.codewithsean.sdw.models.Shows;
 import com.parse.Parse;
 import com.parse.ParseObject;
 
@@ -12,11 +14,12 @@ public class ParseApplication extends Application {
         super.onCreate();
 
         // Register your parse models
-        //ParseObject.registerSubclass(Post.class);
+        //ParseObject.registerSubclass(Shows.class);
 
+        //register parse models
         Parse.initialize(new Parse.Configuration.Builder(this)
-                .applicationId("FEYOfgbgs79zKrq3NMhp2Pyc3egY6kVXVOdNH8U9")
-                .clientKey("0XfzPpo1RZes8Yv6wPUeeK8bWoxoBsNPvXsO0mY0")
+                .applicationId("RjdP0VXXJ9nUO4FmZvDyFJsaARUnvfhG71p2oVqa")
+                .clientKey("heOpiPxWdMqAU3RHQqhvatQJ9KWrMtfGyYbrLkqS")
                 .server("https://parseapi.back4app.com")
                 .build()
         );

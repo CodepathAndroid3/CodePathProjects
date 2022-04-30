@@ -1,6 +1,7 @@
 package com.codewithsean.sdw.fragment;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -20,9 +21,11 @@ import android.widget.TextView;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
+import com.codewithsean.sdw.LoginActivity;
 import com.codewithsean.sdw.R;
 import com.codewithsean.sdw.adapters.ShowsAdapter;
 import com.codewithsean.sdw.models.Shows;
+import com.parse.ParseUser;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -36,17 +39,19 @@ import okhttp3.Headers;
 
 public class ProfileFragment extends Fragment {
 
-    private EditText etDescription;
-    private Button btnTakePic;
-    private ImageView ivPostImage;
-    private Button btnSubmit;
-    private Button btnLogout;
-    public static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 123;
-    private File photoFile;
-    public String photoFileName = "photo.jpg";
+//    private EditText etDescription;
+//    private Button btnTakePic;
+//    private ImageView ivPostImage;
+//    private Button btnSubmit;
+//    private Button btnLogout;
+//    public static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 123;
+//    private File photoFile;
+//    public String photoFileName = "photo.jpg";
 
+    //PROFILE PAGE AS OF RN ONLY HAS A USERIMAGE AND A USERNAME
     private ImageView pfpUserImage;
     private TextView pfpUserName;
+    private Button btnLogout;
 
 
 
@@ -62,12 +67,23 @@ public class ProfileFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_profile, container, false);
     }
 
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         pfpUserImage = view.findViewById(R.id.pfpUserImage);
         pfpUserName = view.findViewById(R.id.pfpUserName);
+        btnLogout = view.findViewById(R.id.btnLogout);
+
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ParseUser.logOut();
+                ParseUser currentUser = ParseUser.getCurrentUser(); // this will now be null
+                goLoginActivity();
+            }
+        });
 
 
 
@@ -84,7 +100,12 @@ public class ProfileFragment extends Fragment {
 //            }
 //        });
 
+    }
 
+    private void goLoginActivity() {
+        Intent i = new Intent(getContext(), LoginActivity.class);
+        startActivity(i);
+        //finish();
     }
 
 

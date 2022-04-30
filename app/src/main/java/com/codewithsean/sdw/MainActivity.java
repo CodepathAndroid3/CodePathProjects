@@ -89,10 +89,5 @@ public class MainActivity extends AppCompatActivity {
         finish();
     }
 
-    private void goProfileActivity() {
-        Intent i = new Intent(this, ProfileActivity.class);
-        startActivity(i);
-        finish();
-    }
 
 }
