@@ -18,6 +18,7 @@ import android.widget.Toast;
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import com.codewithsean.sdw.adapters.ShowsAdapter;
+import com.codewithsean.sdw.fragment.FavoriteFragment;
 import com.codewithsean.sdw.fragment.HomeFragment;
 import com.codewithsean.sdw.fragment.ProfileFragment;
 import com.codewithsean.sdw.models.Shows;
@@ -65,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this,"home", Toast.LENGTH_SHORT).show();
                         fragment = new HomeFragment();
                         break;
+
+                    case R.id.action_favorite://goes to favorite list
+                        fragment = new FavoriteFragment();
+                        Toast.makeText(MainActivity.this,"favorite",Toast.LENGTH_SHORT).show();
+
                 }
                 fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit();
                 return true;

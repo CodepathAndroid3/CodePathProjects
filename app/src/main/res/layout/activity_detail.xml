@@ -23,5 +23,11 @@
         android:layout_height="wrap_content"
         tools:text='Ring'/>
 
+    <Button
+        android:id="@+id/favButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favorite" />
+
 
 </LinearLayout>
