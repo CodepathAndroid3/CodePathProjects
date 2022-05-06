@@ -3,32 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Phoenix/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/activity_detail.xml" value="0.33" />
-        <entry key="..\:/Users/Phoenix/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/activity_favorite.xml" value="0.2557291666666667" />
-        <entry key="..\:/Users/Phoenix/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/activity_login.xml" value="0.3625" />
+        <entry key="..\:/Users/Phoenix/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/activity_detail.xml" value="0.1484375" />
         <entry key="..\:/Users/Phoenix/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/activity_main.xml" value="0.10677083333333333" />
-        <entry key="..\:/Users/Phoenix/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/fragment_favorite.xml" value="0.2557291666666667" />
-        <entry key="..\:/Users/Phoenix/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/fragment_home.xml" value="0.2557291666666667" />
-        <entry key="..\:/Users/Phoenix/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/fragment_profile.xml" value="0.2557291666666667" />
         <entry key="..\:/Users/Phoenix/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/item_shows.xml" value="0.33" />
-        <entry key="..\:/Users/Phoenix/AndroidStudioProjects/CodePathProjects/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.2552083333333333" />
-        <entry key="..\:/Users/Wilm/Desktop/CCNY/Spring 2022 Android/CodePathProjects-main/app/src/main/res/layout/activity_detail.xml" value="0.22552083333333334" />
-        <entry key="..\:/Users/Wilm/Desktop/CCNY/Spring 2022 Android/CodePathProjects-main/app/src/main/res/layout/activity_home.xml" value="0.1" />
-        <entry key="..\:/Users/Wilm/Desktop/CCNY/Spring 2022 Android/CodePathProjects-main/app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="..\:/Users/Wilm/Desktop/CCNY/Spring 2022 Android/CodePathProjects-main/app/src/main/res/layout/activity_main.xml" value="0.16" />
-        <entry key="..\:/Users/Wilm/Desktop/CCNY/Spring 2022 Android/CodePathProjects-main/app/src/main/res/layout/activity_profile.xml" value="0.22552083333333334" />
-        <entry key="..\:/Users/Wilm/Desktop/CCNY/Spring 2022 Android/CodePathProjects-main/app/src/main/res/layout/fragment_home.xml" value="0.1" />
-        <entry key="..\:/Users/Wilm/Desktop/CCNY/Spring 2022 Android/CodePathProjects-main/app/src/main/res/layout/fragment_profile.xml" value="0.22552083333333334" />
-        <entry key="..\:/Users/Wilm/Desktop/CCNY/Spring 2022 Android/CodePathProjects-main/app/src/main/res/layout/item_shows.xml" value="0.22552083333333334" />
-        <entry key="..\:/Users/Wilm/Desktop/CCNY/Spring 2022 Android/CodePathProjects-main/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.2" />
-        <entry key="..\:/Users/seani/AndroidStudioProjects/BACKUP STUFF/CodePathProjects-eee-main/app/src/main/res/layout/activity_create_new_user.xml" value="0.10989583333333333" />
-        <entry key="..\:/Users/seani/AndroidStudioProjects/BACKUP STUFF/CodePathProjects-eee-main/app/src/main/res/layout/activity_home.xml" value="0.1203125" />
-        <entry key="..\:/Users/seani/AndroidStudioProjects/BACKUP STUFF/CodePathProjects-eee-main/app/src/main/res/layout/activity_login.xml" value="0.2" />
-        <entry key="..\:/Users/seani/AndroidStudioProjects/BACKUP STUFF/CodePathProjects-eee-main/app/src/main/res/layout/activity_main.xml" value="0.10989583333333333" />
-        <entry key="..\:/Users/seani/AndroidStudioProjects/BACKUP STUFF/CodePathProjects-eee-main/app/src/main/res/layout/activity_profile.xml" value="0.1203125" />
-        <entry key="..\:/Users/seani/AndroidStudioProjects/BACKUP STUFF/CodePathProjects-eee-main/app/src/main/res/layout/fragment_home.xml" value="0.1203125" />
-        <entry key="..\:/Users/seani/AndroidStudioProjects/BACKUP STUFF/CodePathProjects-eee-main/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
-        <entry key="..\:/Users/seani/AndroidStudioProjects/BACKUP STUFF/CodePathProjects-eee-main/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.1203125" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/activity_detail.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/activity_login.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/activity_main.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/fragment_favorite.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/fragment_home.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/fragment_login.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/fragment_profile.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/item_shows.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/xml/fileprovider.xml" value="0.1" />
         <entry key="..\:/Users/seani/AndroidStudioProjects/SDW/app/src/main/res/layout/activity_main.xml" value="0.1203125" />
         <entry key="..\:/Users/seani/AndroidStudioProjects/SDW/app/src/main/res/layout/item_shows.xml" value="0.4" />
       </map>
