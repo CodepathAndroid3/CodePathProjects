@@ -10,6 +10,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+<<<<<<< HEAD
+=======
+        maven { url "https://jitpack.io" }
+>>>>>>> 6fcf52c6072c157c151277f71c144ecdc5acc94d
     }
 }
 rootProject.name = "SDW"

@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">SDW</string>
+<<<<<<< HEAD
+=======
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Paste BOTH strings as required -->
+    <string name="back4app_app_id">PdNCLYMbVLfYfjEA8rWddCHMv2BTNuIutQBO74nS</string>
+    <string name="back4app_client_key">kLb58aj5MjgXV9BILC1Be5lqUFCyJednHVU5DZya</string>
+>>>>>>> 6fcf52c6072c157c151277f71c144ecdc5acc94d
 </resources>
