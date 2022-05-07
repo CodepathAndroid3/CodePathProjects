@@ -42,12 +42,12 @@ An app that allows users to look at the current most popular TV shows and see so
 * [X] Detail Page
     * [X] Contain TV shows, overview.
     * [] Picture of TV show
-    * [] "Add Favorite" button.
-* [] Profile Page
-    * [] Camera for profile picture.
+    * [X] "Add Favorite" button.
+* [X] Profile Page
+    * [X] Camera for profile picture.
     * [] Any personal user note.
-    * [] Sign-Out Button.
-* [] Login page that allows users to log in or sign up
+    * [X] Sign-Out Button.
+* [X] Login page that allows users to log in or sign up
 
 **Optional Nice-to-have Stories**
 
