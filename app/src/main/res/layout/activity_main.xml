@@ -7,13 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<<<<<<< HEAD
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvShows"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-=======
+
     <FrameLayout
         android:id="@+id/flContainer"
         android:layout_width="match_parent"
@@ -31,5 +31,5 @@
         android:layout_alignParentBottom="true"
         app:menu="@menu/menu_bottom_navigation" />
 
->>>>>>> 6fcf52c6072c157c151277f71c144ecdc5acc94d
+
 </RelativeLayout>
