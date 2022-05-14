@@ -99,6 +99,8 @@ An app that allows users to look at the current most popular TV shows and see so
 [Add picture of your hand sketched wireframes in this section]
 <img src="wireframe.unit8.png" width=600>
 
+<img src='Walkthrough.gif' title='eWalkthrough' width='' alt='Walkthrough.gif' />
+
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
