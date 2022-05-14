@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Phoenix/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/activity_detail.xml" value="0.1484375" />
+        <entry key="..\:/Users/Phoenix/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/activity_main.xml" value="0.10677083333333333" />
+        <entry key="..\:/Users/Phoenix/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/item_shows.xml" value="0.33" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/activity_detail.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/activity_login.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/activity_main.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/fragment_favorite.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/fragment_home.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/fragment_login.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/fragment_profile.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/layout/item_shows.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Wilm/AndroidStudioProjects/CodePathProjects/app/src/main/res/xml/fileprovider.xml" value="0.1" />
+        <entry key="..\:/Users/seani/AndroidStudioProjects/BACKUP STUFF/CodePathProjects-favorite_button/app/src/main/res/layout/fragment_favorite.xml" value="0.10572916666666667" />
+        <entry key="..\:/Users/seani/AndroidStudioProjects/BACKUP STUFF/CodePathProjects-favorite_button/app/src/main/res/layout/fragment_home.xml" value="0.10572916666666667" />
+        <entry key="..\:/Users/seani/AndroidStudioProjects/SDW/app/src/main/res/layout/activity_main.xml" value="0.1203125" />
+        <entry key="..\:/Users/seani/AndroidStudioProjects/SDW/app/src/main/res/layout/item_shows.xml" value="0.4" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
